@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:learning_japanese_language/reusable_component/homepage_cat.dart';
-import 'package:learning_japanese_language/screens/numbers.dart';
+import 'package:learning_japanese_language/screens/colorsscreen.dart';
+import 'package:learning_japanese_language/screens/family_members_screen.dart';
+import 'package:learning_japanese_language/screens/numbers_screen.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -26,7 +28,7 @@ class HomePage extends StatelessWidget {
             color: Colors.green,
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return NumbersScreen();
+                return FamilyMembersScreen();
               }));
             },
           ),
@@ -35,7 +37,7 @@ class HomePage extends StatelessWidget {
             color: Colors.blueAccent,
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return NumbersScreen();
+                return ColorsScreen();
               }));
             },
           ),

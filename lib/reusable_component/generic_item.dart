@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:learning_japanese_language/models/numbersdata.dart';
+import 'package:learning_japanese_language/models/Itemmodel.dart';
+import 'package:audioplayers/audioplayers.dart';
 
-class NumbersItems extends StatelessWidget {
-  const NumbersItems({super.key, required this.number});
-  final NumbersData number;
+class GenericItems extends StatelessWidget {
+  const GenericItems({super.key, required this.item, required this.color});
+  final ItemModel item;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: 80,
       width: double.infinity,
-      color: const Color.fromARGB(255, 87, 148, 252),
+      color: color,
       child: Row(
         children: [
           Container(
-            color: Colors.blueGrey,
-            child: Image.asset(number.image),
+            color: const Color.fromARGB(255, 96, 139, 125),
+            child: Image.asset(item.image),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16),
@@ -24,14 +26,14 @@ class NumbersItems extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  number.numEng,
+                  item.numEng,
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16,
                   ),
                 ),
                 Text(
-                  number.numJP,
+                  item.numJP,
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16,
@@ -41,12 +43,16 @@ class NumbersItems extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          const Padding(
-            padding: EdgeInsets.only(right: 16),
-            child: Icon(
-              Icons.play_arrow_rounded,
-              color: Colors.black,
-              size: 30,
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: IconButton(
+              icon: const Icon(
+                Icons.play_arrow_rounded,
+                size: 30,
+              ),
+              onPressed: () {
+                item.playSound();
+              },
             ),
           ),
         ],
