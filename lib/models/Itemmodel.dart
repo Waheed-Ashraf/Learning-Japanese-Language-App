@@ -15,3 +15,19 @@ class ItemModel {
     player.play(AssetSource(audio));
   }
 }
+
+class PhraseModel {
+  final String numEng;
+  final String numJP;
+
+  final String audio;
+  const PhraseModel({
+    required this.audio,
+    required this.numEng,
+    required this.numJP,
+  });
+  void playSound() {
+    final player = AudioPlayer();
+    player.play(AssetSource(audio));
+  }
+}

@@ -9,42 +9,42 @@ class ColorsScreen extends StatelessWidget {
     ItemModel(
         image: "assets/images/colors/color_black.png",
         numEng: 'Black',
-        numJP: 'Chichi',
+        numJP: 'Kuro',
         audio: 'sounds/colors/black.wav'),
     ItemModel(
         image: "assets/images/colors/color_brown.png",
         numEng: 'Brown',
-        numJP: 'Haha',
+        numJP: 'Chairo',
         audio: 'sounds/colors/brown.wav'),
     ItemModel(
         image: "assets/images/colors/color_dusty_yellow.png",
         numEng: 'Dusty Yellow',
-        numJP: 'Sofu',
+        numJP: 'Hokori Ppoi Kiiro',
         audio: 'sounds/colors/dusty yellow.wav'),
     ItemModel(
         image: "assets/images/colors/color_gray.png",
         numEng: 'Gray',
-        numJP: 'Sobo',
+        numJP: 'Gure',
         audio: 'sounds/colors/gray.wav'),
     ItemModel(
         image: "assets/images/colors/color_green.png",
         numEng: 'Green',
-        numJP: 'Musuko',
+        numJP: 'Midori',
         audio: 'sounds/colors/green.wav'),
     ItemModel(
         image: "assets/images/colors/color_red.png",
         numEng: 'Red',
-        numJP: 'Musume',
+        numJP: 'Aka',
         audio: 'sounds/colors/red.wav'),
     ItemModel(
         image: "assets/images/colors/color_white.png",
         numEng: 'White',
-        numJP: 'Ani',
+        numJP: 'Shiro',
         audio: 'sounds/colors/white.wav'),
     ItemModel(
         image: "assets/images/colors/yellow.png",
         numEng: 'Yellow ',
-        numJP: 'Ane',
+        numJP: 'Kiiro',
         audio: 'sounds/colors/yellow.wav'),
   ];
 
@@ -53,7 +53,7 @@ class ColorsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Family Members',
+          'Colors',
         ),
         backgroundColor: Colors.orange,
       ),

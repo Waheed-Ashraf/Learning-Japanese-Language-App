@@ -3,6 +3,7 @@ import 'package:learning_japanese_language/reusable_component/homepage_cat.dart'
 import 'package:learning_japanese_language/screens/colorsscreen.dart';
 import 'package:learning_japanese_language/screens/family_members_screen.dart';
 import 'package:learning_japanese_language/screens/numbers_screen.dart';
+import 'package:learning_japanese_language/screens/phrase_screen.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -42,11 +43,11 @@ class HomePage extends StatelessWidget {
             },
           ),
           HomepageCategories(
-            cateName: "Names",
+            cateName: "Phrase",
             color: Colors.cyan,
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return NumbersScreen();
+                return PhraseScreen();
               }));
             },
           ),
